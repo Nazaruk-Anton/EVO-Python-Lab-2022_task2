@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+
+{% block menu %}
+    {{ super() }}
+{% endblock %}
+
+
+{% block content %}
+    <form action="" method="post">
+        <p>
+            <label for="message">Message:</label>
+            <input type="text" name="message">
+        </p>
+
+        <p>
+            <input type="submit">
+        </p>
+    </form>
+    <p>{{ message }}</p>
+{% endblock %}
